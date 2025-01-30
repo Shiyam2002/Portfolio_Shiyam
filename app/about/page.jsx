@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 // About section
 const about = {
   title: "About me",
-  description: "Provides key personal details about the individual.",
+  description: "Provides key personal details about the me.",
   info: [
     { fieldName: "Name", fieldValue: "Shiyam" },
     { fieldName: "Phone", fieldValue: "(+91) 9944117511" },
@@ -32,7 +32,7 @@ const about = {
 // Experience section
 const experience = {
   title: "My experience",
-  description: "Highlights the professional roles and companies the individual has worked with.",
+  description: "Highlighted my professional roles and the companies I have worked with.",
   items: [
     { company: "Synergech", position: "Software Developer - Trainee", duration: "2024 - Present" },
     { company: "Accenture", position: "Packaged App Development Associate", duration: "2024 - 8 months" },
@@ -43,7 +43,7 @@ const experience = {
 // Education section
 const education = {
   title: "My education",
-  description: "Lists the individual’s academic qualifications and institutions attended.",
+  description: "Listed my academic qualifications and the institutions I have attended.",
   items: [
     { institution: "Sona College of Arts and Science", degree: "Bachelor of Computer Applications (BCA)", duration: "2020 - 2023" },
     { institution: "Sri Vidya Mandir Higher Secondary School", degree: "Higher Secondary Education", duration: "2019 - 2020" },

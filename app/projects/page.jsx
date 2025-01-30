@@ -20,15 +20,15 @@ const projects = [
     num: "01",
     category: "full-stack",
     title: "Project 1",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, reiciendis.",
+    description: "System for seamless healthcare appointment scheduling, enhancing patient management and service efficiency.",
     stack: [
       { name: "Spring Boot" },
       { name: "ReactJs" },
-      { name: "Postman" },
+      { name: "MySQL" },
     ],
     image: "",
     live: "",
-    github: "",
+    github: "https://github.com/Shiyam2002/Front_end",
   },
   // {
   //   num: "02",
@@ -96,7 +96,7 @@ const Projects = () => {
               {/*button */}
               <div className="flex items-center gap-4">
                 {/*Live project button */}
-                <Link href={project.live}>
+                <Link href={project.live} target="blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -111,7 +111,7 @@ const Projects = () => {
                 </Link>
 
                 {/*github project button */}
-                <Link href={project.github}>
+                <Link href={project.github} target="blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
