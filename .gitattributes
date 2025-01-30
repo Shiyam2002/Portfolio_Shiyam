@@ -1,0 +1,2 @@
+shiyam-portfolio/.next/cache/webpack/server-development/27.pack.gz filter=lfs diff=lfs merge=lfs -text
+shiyam-portfolio/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node filter=lfs diff=lfs merge=lfs -text
