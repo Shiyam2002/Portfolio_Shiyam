@@ -2,6 +2,7 @@
 export async function GET() {
     try {
       // 1. First fetch repositories
+      console.log("GitHub Access Token:", process.env.GITHUB_ACCESS ? "Exists" : "MISSING");
       const reposResponse = await fetch("https://api.github.com/users/Shiyam2002/repos", {
         headers: {
           Authorization:` Bearer ${process.env.GITHUB_ACCESS}`,
