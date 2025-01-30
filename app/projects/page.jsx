@@ -26,7 +26,7 @@ const projects = [
       { name: "ReactJs" },
       { name: "MySQL" },
     ],
-    image: "",
+    image: "/assets/project01.png",
     live: "",
     github: "https://github.com/Shiyam2002/Front_end",
   },
