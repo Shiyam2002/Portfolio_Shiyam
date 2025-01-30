@@ -54,7 +54,7 @@ const education = {
 // Skill section
 const skill = {
   title: "My skills",
-  description: "Showcases the technical and soft skills with representative icons.",
+  description: "Showcases my technical abilities, along with my strong communication and problem-solving skills.",
   skillset: [
     { icon: <FaJava />, name: "Java" },
     { icon: <FaJs />, name: "JavaScript" },
