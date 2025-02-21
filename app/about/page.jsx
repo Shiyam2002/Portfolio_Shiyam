@@ -106,10 +106,10 @@ const About = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => (
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                        <span className="text-accent">{item.duration}</span>
+                        <span className="text-cyan-400">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-cyan-400"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>
@@ -129,10 +129,10 @@ const About = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => (
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                        <span className="text-accent">{item.duration}</span>
+                        <span className="text-cyan-400">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-cyan-400"></span>
                           <p className="text-white/60">{item.institution}</p>
                         </div>
                       </li>
@@ -156,7 +156,7 @@ const About = () => {
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              <div className="text-6xl group-hover:text-cyan-400 transition-all duration-300">
                                 {skills.icon}
                               </div>
                             </TooltipTrigger>

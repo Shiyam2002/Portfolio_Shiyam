@@ -110,7 +110,7 @@ const Contact = () => {
                             className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
                             onSubmit={handleSubmit}
                         >
-                            <h3 className="text-4xl text-accent">Let's work together</h3>
+                            <h3 className="text-4xl text-cyan-400">Let's work together</h3>
                             <p className="text-white/60">
                                 Fill out the form below to get in touch with me.
                             </p>
@@ -150,8 +150,8 @@ const Contact = () => {
                                 exit={{ opacity: 0 }}
                                 className={`absolute -top-12 left-0 w-full p-4 rounded-lg shadow-lg text-center ${
                                     messageType === "success"
-                                        ? "bg-[#27272c] text-accent/90"
-                                        : "bg-[#27272c] text-[#e7000b]"
+                                        ? "bg-[#27272c] text-cyan/90"
+                                        : "bg-[#27272c] text-[#f6343e]"
                                 }`}
                             >
                                 <p className="text-lg font-medium">{message}</p>
@@ -161,7 +161,7 @@ const Contact = () => {
                         <ul className="flex flex-col gap-10">
                             {info.map((item, index) => (
                                 <li key={index} className="flex items-center gap-6">
-                                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
+                                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-cyan-400 rounded-md flex items-center justify-center">
                                         <div className="text-[28px]">{item.icon}</div>
                                     </div>
                                     <div>

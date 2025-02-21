@@ -16,6 +16,7 @@ const JetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "ShiyamKs",
   description: "",
+    icon: "/favicon.ico", // Ensure this file exists in the public folder
 };
 
 export default function RootLayout({ children }) {

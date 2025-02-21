@@ -17,7 +17,7 @@ const Home = () => {
             </span>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Hello, I'm <br />
-              <span className="text-accent">Shiyam KS</span>
+              <span className="text-cyan-400">Shiyam KS</span>
             </h1>
             <p className="text-white/80 max-w-md mx-auto md:mx-0">
               I excel at crafting scalable web applications and optimizing backend performance.
@@ -40,7 +40,7 @@ const Home = () => {
               {/* Social Icons */}
               <div className="mt-4 md:mt-0">
                 <Social containerStyles="flex gap-4 md:gap-6" 
-                        iconStyles="w-10 h-10 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary transition-all duration-300" 
+                        iconStyles="w-10 h-10 border border-cyan-400 rounded-full flex justify-center items-center text-cyan-400 text-base hover:bg-cyan-400 hover:text-primary transition-all duration-300" 
                 />
               </div>
             </div>

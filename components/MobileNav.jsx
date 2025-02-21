@@ -32,14 +32,14 @@ const MobileNav = () => {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger className="flex justify-center items-center" onClick={() => setOpen(true)}>
-                <CiMenuFries className="text-[32px] text-accent" />
+                <CiMenuFries className="text-[32px] text-cyan-400" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 {/* Logo */}
                 <div className="mt-16 mb-24 text-center text-2xl">
                     <Link href="/" onClick={() => setOpen(false)}>
                         <h1 className="text-4xl font-semibold">
-                            Shiyam <span className="text-accent">.</span>
+                            Shiyam <span className="text-cyan-400">.</span>
                         </h1>
                     </Link>
                 </div>
@@ -50,7 +50,7 @@ const MobileNav = () => {
                             <Link
                                 href={link.path}
                                 key={index}
-                                className={`${link.path === pathname && "text-accent border-b-2 border-accent"} capitalize font-medium hover:text-accent transition-all`}
+                                className={`${link.path === pathname && "text-cyan-400 border-b-2 border-cyan-400"} capitalize font-medium hover:text-cyan-400 transition-all`}
                                 onClick={() => setOpen(false)} // Close nav on click
                             >
                                 {link.name}

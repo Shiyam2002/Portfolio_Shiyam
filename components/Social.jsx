@@ -21,7 +21,7 @@ const Social = ({ containerStyles = "", iconStyles = "" }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={item.label}
-            className={`w-10 h-10 flex items-center justify-center rounded-full border border-accent text-accent transition-all duration-300 hover:bg-accent hover:text-primary ${iconStyles}`}
+            className={`w-10 h-10 flex items-center justify-center rounded-full border border-cyan-400 text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-primary ${iconStyles}`}
           >
             {item.icon}
           </Link>
