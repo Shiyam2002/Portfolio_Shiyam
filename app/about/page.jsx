@@ -15,6 +15,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import React, { useMemo } from "react";
 
 // About section
 const about = {
@@ -78,6 +79,64 @@ const skill = {
 };
 
 const About = () => {
+
+  const about = useMemo(() => ({
+    title: "About me",
+    description: "Provides key personal details about the me.",
+    info: [
+      { fieldName: "Name", fieldValue: "Shiyam" },
+      { fieldName: "Phone", fieldValue: "(+91) 9944117511" },
+      { fieldName: "Experience", fieldValue: "1+ year" },
+      { fieldName: "Email", fieldValue: "k.s.shiyam2002@gmail.com" },
+      { fieldName: "Languages", fieldValue: "English, Tamil, Sourashtra" },
+    ],
+  }), []);
+
+  const experience = useMemo(() => ({
+    title: "My experience",
+    description: "Highlighted my professional roles and the companies I have worked with.",
+    items: [
+      { company: "Synergech", position: "Software Developer - Trainee", duration: "2024 - Present" },
+      { company: "Accenture", position: "Packaged App Development Associate", duration: "2024 - 8 months" },
+      { company: "Cognitive Machines", position: "Associate Software Developer - Intern", duration: "2023 - 2 months" },
+    ],
+  }), []);
+
+  const education = useMemo(() => ({
+    title: "My education",
+    description: "Listed my academic qualifications and the institutions I have attended.",
+    items: [
+      { institution: "Sona College of Arts and Science", degree: "Bachelor of Computer Applications (BCA)", duration: "2020 - 2023" },
+      { institution: "Sri Vidya Mandir Higher Secondary School", degree: "Higher Secondary Education", duration: "2019 - 2020" },
+      { institution: "Sri Seshaas International Public School", degree: "Secondary Education", duration: "2017 - 2018" },
+    ],
+  }), []);
+
+  const skill = useMemo(() => ({
+    title: "My skills",
+    description: "Showcases my technical abilities, along with my strong communication and problem-solving skills.",
+    skillset: [
+      { icon: <FaJava />, name: "Java" },
+      { icon: <FaJs />, name: "JavaScript" },
+      { icon: <SiHtml5 />, name: "HTML5" },
+      { icon: <SiSpringboot />, name: "Spring Boot" },
+      { icon: <FaReact />, name: "ReactJS" },
+      { icon: <SiBootstrap />, name: "Bootstrap" },
+      { icon: <SiMysql />, name: "MySQL" },
+      { icon: <FaGitAlt />, name: "Git" },
+      { icon: <SiPostman />, name: "Postman" },
+      { icon: <SiJson />, name: "JSON" },
+      { icon: <FaDatabase />, name: "Database" },
+      { icon: <SiNextdotjs />, name: "Next.js" },
+      { icon: <SiTailwindcss />, name: "TailwindCSS" },
+      { icon: <SiDocker />, name: "Docker" },
+      { icon: <SiKubernetes />, name: "Kubernetes" },
+      { icon: <VscAzure />, name: "Azure" },
+      { icon: <VscVscode />, name: "Vscode" },
+      { icon: <FaLinux />, name: "Linux" },
+    ]
+  }), []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

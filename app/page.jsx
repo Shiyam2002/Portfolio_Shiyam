@@ -54,6 +54,7 @@ const Home = () => {
       </div>
 
       {/* Stats Section */}
+      
       <Stats />
     </section>
   );
